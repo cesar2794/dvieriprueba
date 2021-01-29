@@ -1,0 +1,322 @@
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Italianno', cursive; */
+/* font-family: 'Lato', sans-serif; */
+
+body{
+     background-color: #f8f8f8;
+}
+.encabezado{
+     font-size: 2rem;
+     font-family: 'Lato', sans-serif;
+     color: #000;
+     line-height: 2.4rem;
+}
+.encabezado span{
+     font-size: 3.8rem;
+     font-family: 'Italianno', cursive;
+     color: #b08a1b;
+}
+
+
+/* FIXME: CSS SOCIALES */
+.sociales ul{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+.sociales ul li{
+     position: relative;
+     display: inline-block;
+}
+.sociales ul li a::before{
+     font-family: 'FontAwesome';
+     display: inline-block;
+     vertical-align: top;
+     padding: 0.4rem;
+     content: '\f08e';
+     -webkit-font-smoothing: antialiased;
+     font-size: 2rem;
+     color: #b08a1b;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+     content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+     content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+     content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+     content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+     content: '\f16a';
+}
+
+/* FIXME: CSS NAVEGACION */
+.navegacion{
+     background-color: #ec272b;
+}
+.navbar-light .navbar-toggler{
+     background-color: #fff;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover{
+     color: #ded8d8;
+}
+.nav-principal{
+     background-image: url(../img/border_horizontal.png),
+     url(../img/border_horizontal.png);
+     background-repeat: repeat-x;
+     background-position: 0px top, 0px bottom;
+}
+.nav-link{
+     color: #ffffff;
+     font-size: 1rem;
+     font-weight: 600;
+     transition: all .5s ease-in-out;
+     font-family: 'Raleway', sans-serif;
+}
+.nav-link:hover{
+     background-color: #bfb473;
+     color: #000;
+     border-radius: 5px;
+}
+
+/* FIXME: CSS CAROUSEL */
+.carousel-caption{
+    background-color: #b08a1b;
+}
+.carousel-caption h3{
+     font-family: 'Raleway', sans-serif;
+     font-size: 2rem;
+     font-weight: 900;
+     color: #fff;
+}
+
+/* FIXME: CSS NUEVO SITIO */
+.nuevo-sitio p{
+     font-family: 'Lato', sans-serif;
+     color: #979797;
+     font-size: 1.6rem;
+}
+
+/* FIXME: CSS SERVICIOS */
+.imagen-servicio img{
+    border: 6px solid #ffffff;
+    -webkit-transition: transform .4s ease;
+    -ms-transition: transform .4s ease;
+    transition: transform .4s ease;
+}
+.imagen-servicio img:hover{
+    -webkit-transform: scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+}
+.servicio-info{
+    background-color: #ffffff;
+    margin-top: -5rem;
+}
+.servicio-info .btn-primary{
+    border-radius: 0;
+    background-color: #e23033;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #c42124!important;
+    border-radius: 0;
+}
+
+/* FIXME: CSS Tabla Horarios */
+.horario{
+    background-color: #d0a62d;
+    color: #ffffff;
+}
+.horario h2{
+    font-size: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+.horario .table{
+    border: 2px solid #e23033;
+}
+.horario .table thead{
+    background-color:#e2393b;
+}
+.horario .table td,
+.horario .table thead th{
+    border: none;
+}
+.horario .table tbody tr td{
+    padding: .35rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
+.bg-horario{
+    background-image: url(../img/bg_horarios.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+/* FIXME: CSS PRODUCTOS */
+.productos .card{
+    border: none;
+}
+.productos .card a{
+    color: #000;
+}
+.productos .card a:hover{
+    text-decoration: none;
+}
+.productos .card h3{
+    color: #e082a8;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+.productos .card p{
+    font-size: .8rem;
+}
+.productos .card .precio{
+    font-size: 1.6rem;
+    color: #979797;
+}
+
+/* FIXME: CSS CITAS */
+.citas{
+    background-image: url(../img/bg_citas.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+@media (min-width: 992px){
+        .citas{
+            background-size: cover;
+        }
+}
+
+.citas h3{
+    font-size: 2.8rem;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1rem;
+}
+.citas p{
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+.btn-primary{
+    background-color: #8ed3cc;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+.btn-primary:hover{
+    background-color: #69aca5;
+}
+
+/* FIXME: CSS FOOTER */
+.copyright{
+    color: #979797;
+    font-size: .8rem;
+}
+
+
+/* FIXME: CSS HERO */
+.hero{
+    position: relative;
+}
+.hero h2{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: #8ed3cc;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+
+/* FIXME: CSS Contenido Principal */
+.contenido-principal p{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* FIXME: CSS SIDEBAR - Aside */
+aside{
+    background-color: #8ed3cc;
+    color: #fff;
+}
+
+
+/* FIXME: CSS SERVICIOS / Accordion */
+#servicios .card-header{
+    background-color: #e082a8;
+    padding: 0 1.2rem;
+}
+#servicios .card-header .btn-link{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+}
+#servicios .card-header button{
+    text-decoration: none;
+}
+#servicios .card-header button:hover{
+    color: #dceeec;
+}
+#servicios .card-body{
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Agregados */
+.sidebar h3.cliente-nuevo{
+    color: #427572;
+}
+.cupon span.descuento{
+    font-size: 2rem;
+}
+
+/* FIXME: CSS CUPON */
+.cupon{
+    border: 3px dashed #fff;
+}
+
+/* FIXME: CSS PRODUCTOS */
+@media (min-width: 576px){
+    .card-columns{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+    }
+}
+@media (min-width: 992px){
+    .card-columns{
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+/* FIXME: CSS CONTACTO */
+.formulario-contacto{
+    border: 2px solid #9a9a9a;
+    background-color: #fff;
+}
+
+.formulario-contacto textarea{
+    min-height: 5rem;
+    max-height: 10rem;
+}
