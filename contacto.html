@@ -5,7 +5,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Primer Proyecto en Bootstrap</title>
+  <title>DVIERI | CONTACTO</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Raleway:400,700,900" rel="stylesheet">
@@ -110,48 +117,12 @@
 
   <div class="container pt-4">
     <div class="row justify-content-center">
-      <main class="col-lg-8 contenido-principal">
+      <main class="col-lg-10 contenido-principal">
         <h2 class="d-block d-md-none text-uppercase text-center">
           Contacto
         </h2>
-        <!-- TODO: FORMULARIO CONTACTO -->
-        <form class="p-5 mt-5 formulario-contacto needs-validation" novalidate>
 
-          <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" class="form-control" type="text" placeholder="Tu Nombre" required>
-            <div class="invalid-feedback">
-              El nombre es obligatorio
-            </div>
-            <div class="valid-feedback">
-              Correcto
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">E-Mail:</label>
-            <input id="email" class="form-control" type="email" placeholder="Tu Correo" required>
-            <div class="invalid-feedback">
-              El correo es obligatorio
-            </div>
-            <div class="valid-feedback">
-              Correcto
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" class="form-control" required></textarea>
-            <div class="invalid-feedback">
-              El mensaje es obligatorio
-            </div>
-            <div class="valid-feedback">
-              Correcto
-            </div>
-          </div>
-
-          <input type="submit" class="btn btn-primary text-uppercase" value="Enviar">
-        </form>
+        <div id="mapid"></div>
       </main>
 
     </div>
@@ -218,7 +189,6 @@
       </div> <!-- .row -->
     </div> <!-- .container -->
   </footer>
-
 
 
   <script src="js/jquery-3.3.1.min.js"></script>

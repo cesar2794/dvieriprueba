@@ -383,3 +383,7 @@ aside {
     min-height: 5rem;
     max-height: 10rem;
 }
+
+#mapid {
+    height: 400px;
+}
