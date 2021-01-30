@@ -312,6 +312,9 @@ aside {
     color: #fff;
 }
 
+aside .informacion b, aside .sidebar h2{
+    color: #314e58;
+}
 
 /* FIXME: CSS SERVICIOS / Accordion */
 #servicios .card-header {
