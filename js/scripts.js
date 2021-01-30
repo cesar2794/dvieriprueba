@@ -10,7 +10,6 @@ $(document).ready(function(){
     document.addEventListener('DOMContentLoaded', function(){
 
         //Mapa de la empresa Biofoods Peru S.A.C.
-        // var map = L.map('mapid').setView([51.505, -0.09], 14);
         var map = L.map('mapid', {
             center: [-12.118733, -77.040048],
             zoom: 16
